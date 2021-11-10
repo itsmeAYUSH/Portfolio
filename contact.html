@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>contact</title>
+    <link rel="stylesheet" href="Cstyle.css">
+    <script src="https://code.jquery.com/jquery-3.5.0.js"></script>
+    <link rel="shortcut icon" href="logox.svg">
+    <link rel="shortcut icon" href="contact.svg">
+  </head>
+  <body>
+    <div class="loader-wrapper">
+      <span class="loader"><span class="loader-inner"></span></span>
+    </div>
+
+      <div class="top">
+        <h2>CONTACT ME</h2>
+      </div>
+        <div class="wave">
+            <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+                <path d="M985.66,92.83C906.67,72,823.78,31,743.84,14.19c-82.26-17.34-168.06-16.33-250.45.39-57.84,11.73-114,31.07-172,41.86A600.21,600.21,0,0,1,0,27.35V120H1200V95.8C1132.19,118.92,1055.71,111.31,985.66,92.83Z" class="shape-fill"></path>
+            </svg>
+        </div>
+
+          <div class="contact-form">
+            <form id="contact-form" method="post" action="contact.php">
+              <input name="name" type="text" class="form-control" placeholder="YOUR NAME" required>
+              <br>
+              <input name="email" type="email" class="form-control" placeholder="YOUR EMAIL" required>
+              <br>
+
+              <textarea name="message" class="form-control" placeholder="MESSAGE..." rows="5" required></textarea>
+              <br>
+              <input type="submit" class="form-contorl submit"  value="SEND MESSAGE">
+          </div>
+        </form>
+<div class="myBtn">
+<a href="index.html"> <img src="left.svg" alt="" height="50px";></a>
+<h3>back</h3>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script>
+    $(window).on("load",function(){
+      $(".loader-wrapper").fadeOut("slow");
+    });
+</script>
+  </body>
+</html>

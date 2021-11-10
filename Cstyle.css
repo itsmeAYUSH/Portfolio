@@ -1,0 +1,171 @@
+@import url('https://fonts.googleapis.com/css2?family=Bad+Script&family=Raleway&display=swap');
+
+*{
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  list-style: none;
+  box-sizing: border-box;
+
+}
+
+.wave {
+    position: ;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+}
+
+.wave svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 80px;
+    transform: rotateX(180deg);
+}
+
+.wave .shape-fill {
+    fill: #ffc85c;
+}
+
+h2{
+font-family: 'Raleway', sans-serif;
+color:#433d3c;
+font-size: 30px;
+}
+
+.top{
+  text-align: center;
+  margin-top: 0;
+  background-color:#ffc85c;
+  padding: 50px 0px 0px 0px ;
+}
+
+
+form{
+  text-align: center;
+  margin: auto;
+  transition: all 4s ease-in-out;
+}
+
+.form-control{
+  margin-top:60px;
+  width: 600px;
+  background: transparent;
+  border: none;
+  outline:none;
+  border-bottom: 1px solid grey;
+  color: black;
+  font-size: 18px;
+
+}
+input{
+  height: 45px;
+}
+form .submit{
+  background: black;
+  border-color:transparent;
+  color:#fff;
+  font-weight:bold;
+  letter-spacing: 2px;
+  height: 50px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  border-radius: 30px;
+  padding:10px;
+}
+form .submit:hover{
+  background-color:#f05454;
+  cursor: pointer;
+}
+
+@media (max-width:1000px){
+  .top{
+    padding: 100px 0px 80px 0px ;
+  }
+  h2{
+    font-size: 100px;
+  }
+  .form-control{
+    height:200px;
+    width: 80%;
+    margin-top:60px;
+    background: transparent;
+    border: none;
+    outline:none;
+    border-bottom: 3px solid grey;
+    color: black;
+    font-size: 50px;
+  }
+
+  form .submit{
+    font-size: 40px;
+    letter-spacing: 5px;
+    width: 50%;
+    height: 150px;
+    margin-top: 80px;
+    margin-bottom: 20px;
+    border-radius: 70px;
+    padding:10px;
+  }
+  .contact-form textarea{
+    height: 500px;
+  }
+
+}
+
+.myBtn{
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  cursor: pointer;
+  z-index: 1;
+}
+
+h3{
+  text-align: center;
+}
+.loader-wrapper {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: #ffc85c;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+}
+.loader {
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  position: relative;
+  border: 4px solid #433d3c;
+  animation: loader 2s infinite ease;
+}
+.loader-inner {
+  vertical-align: top;
+  display: inline-block;
+  width: 100%;
+  background-color: #fff;
+  animation: loader-inner 2s infinite ease-in;
+}
+
+@keyframes loader {
+  0% { transform: rotate(0deg);}
+  25% { transform: rotate(180deg);}
+  50% { transform: rotate(180deg);}
+  75% { transform: rotate(360deg);}
+  100% { transform: rotate(360deg);}
+}
+
+@keyframes loader-inner {
+  0% { height: 0%;}
+  25% { height: 0%;}
+  50% { height: 100%;}
+  75% { height: 100%;}
+  100% { height: 0%;}
+}
