@@ -8,6 +8,12 @@
     <link rel="shortcut icon" href="logox.svg">
     <link rel="shortcut icon" href="contact.svg">
   </head>
+  <script>
+    function sendEmail() 
+    {
+        window.location = "mailto:ayushksagar14@gmail.com";
+    }
+    </script>
   <body>
     <div class="loader-wrapper">
       <span class="loader"><span class="loader-inner"></span></span>
@@ -23,7 +29,9 @@
         </div>
 
           <div class="contact-form">
-            <form id="contact-form" method="post" action="contact.php">
+            <!-- <form id="contact-form" method="post" action="contact.php"> -->
+              <form id="contact-form" method="GET" action="mailto:ayushksagar14@gmail.com">
+
               <input name="name" type="text" class="form-control" placeholder="YOUR NAME" required>
               <br>
               <input name="email" type="email" class="form-control" placeholder="YOUR EMAIL" required>
@@ -31,8 +39,8 @@
 
               <textarea name="message" class="form-control" placeholder="MESSAGE..." rows="5" required></textarea>
               <br>
-              <a href="./index.html">              <input type="submit" class="form-contorl submit"  value="SEND MESSAGE">
-              </a>
+              <!-- <a href="./index.html"><input onclick="sendEmail()" type="submit" class="form-contorl submit"  value="SEND MESSAGE"></a> -->
+              <input type="submit" class="form-contorl submit"  value="SEND MESSAGE">
           </div>
         </form>
 <div class="myBtn">
